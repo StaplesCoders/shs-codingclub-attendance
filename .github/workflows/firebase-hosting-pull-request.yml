@@ -12,7 +12,9 @@ jobs:
       FIREBASE_KEY: ${{ secrets.FIREBASE_KEY }}
 
     steps:
-      - run: echo "PUBLIC_FIREBASE_API=$FIREBASE_KEY" > .env
+      - run: |
+          touch .env
+          echo "PUBLIC_FIREBASE_API_KEY=$FIREBASE_API_KEY" >> .env
       - uses: actions/checkout@v2
       - run: yarn install --immutable && yarn build
       - uses: FirebaseExtended/action-hosting-deploy@v0
