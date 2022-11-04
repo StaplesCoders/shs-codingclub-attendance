@@ -4,7 +4,7 @@
 	font-family: 'Jetbrains Mono';
 	font-weight: 1 1000;
 
-	src: url('/fonts/JetBrainsMono-Thin.woff2') format('woff2');
+	src: url('/fonts/JetBrainsMono-Thin.woff2') format('woff2 supports variations'),;
 }
 
 @font-face {
@@ -64,4 +64,5 @@ a {
 
 .mono {
 	font-family: 'Jetbrains Mono', 'Courier New', Courier, monospace;
+	font-weight: 200;
 }
