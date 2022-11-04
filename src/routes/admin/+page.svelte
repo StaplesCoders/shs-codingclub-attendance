@@ -164,7 +164,11 @@
 		}
 
 		.user {
+			display: flex;
+			align-items: center;
+
 			padding: 0.5rem 1rem;
+
 			&:nth-of-type(odd) {
 				border-radius: 0.5rem;
 				background: rgba($color, 0.1);
