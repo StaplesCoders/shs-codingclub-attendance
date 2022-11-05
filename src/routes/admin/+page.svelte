@@ -95,7 +95,7 @@
 				{#each attendance[date] as entry}
 					<div class="user">
 						<img src={entry.user.pfp} alt="" />{entry.user.name}
-						<span class="mono">({entry.time})</span>
+						&nbsp;<span class="mono">({entry.time})</span>
 					</div>
 				{/each}
 			</div>
